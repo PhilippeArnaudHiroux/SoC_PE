@@ -9,7 +9,7 @@
 	* 3: MISO (Y16) &rarr; Serial-data output voor IC.
 	* 4: SCK (Y17) &rarr; Serial clock.
 	* 5: GND
-	* 6: VCC (3.3V)
+	* 6: VCC &rarr; 3.3V
 
 ## MAX14840E
 - RS-485 transmitter
@@ -20,10 +20,10 @@
 	* 3: RO (T11) &rarr; Ontvanger output. Deze pin draagt de half-duplex ontvangen data over aan de pmod UART ontvanger.
 	* 4: DE (T10) &rarr; Driver output eneble input. Deze actief hoge pin zet de half-duplex zender aan.
 	* 5: GND
-	* 6: VCC (3.3V)
+	* 6: VCC &rarr; 3.3V
 - pins J2
-	* 1: RS485-A (noninverting RS-485 signaal)
-	* 2: RS485-B (inverting RS-485 signaal)
+	* 1: RS485-A &rarr; noninverting RS-485 signaal
+	* 2: RS485-B &rarr; inverting RS-485 signaal
 - Half duplex &rarr; Communicatie over 1 kanaal. De zender en de ontvanger gebruiken hetzelfde kanaal om de beurt om te zenden en te ontvangen. Bij dit bordje gaat dit maximaal tot 10MBps.
 
 ## Neopixel RGB Matrix (8x8)
@@ -47,7 +47,7 @@
 ## TFT-shield
 ### Ambient light sensor 
 - Pins 
-	* 1: VCC (3.3V)
+	* 1: VCC &rarr; 3.3V
 	* 2: GND
 	* 3: ALS_OUT
 ### Display connector
