@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri May 26 14:08:47 2023
+# Process ID: 29532
+# Current directory: C:/Users/12000174/Documents/DEF_Works/Eindopdrachtsoc/vivado/Vraag2.runs/design_1_axi_smc_1_synth_1
+# Command line: vivado.exe -log design_1_axi_smc_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_smc_1.tcl
+# Log file: C:/Users/12000174/Documents/DEF_Works/Eindopdrachtsoc/vivado/Vraag2.runs/design_1_axi_smc_1_synth_1/design_1_axi_smc_1.vds
+# Journal file: C:/Users/12000174/Documents/DEF_Works/Eindopdrachtsoc/vivado/Vraag2.runs/design_1_axi_smc_1_synth_1\vivado.jou
+# Running On: PF2ADN53, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 4, Host memory: 16918 MB
+#-----------------------------------------------------------
+source design_1_axi_smc_1.tcl -notrace
