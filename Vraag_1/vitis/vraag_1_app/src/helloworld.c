@@ -34,7 +34,7 @@ int main()
 	sendMsg[0] = '0';
 	sendMsg[1] = 'x';
 	sendMsg[2] = '0';
-	sendMsg[3] = '2';
+	sendMsg[3] = '3';
 
 	XUartPs_Send(&Uart, sendMsg, sizeof(sendMsg));
 	usleep(5000);
