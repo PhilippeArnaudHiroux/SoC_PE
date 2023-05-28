@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="vraag_1_app" location="D:/SoC/SoC_PE/Vraag_1/vitis/vraag_1_app" platform="D:/SoC/SoC_PE/Vraag_1/vitis/design_1_xsa/export/design_1_xsa/design_1_xsa.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="vraag_1_app_system" sysConfig="design_1_xsa" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="3fe61f66e98d0e0c5b34b74b2928862c">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1648294368">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.335942368" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

@@ -37,10 +37,10 @@
 - Pins 
 	* 1: GND
 	* 2: VCC &rarr; 3.3V.
-	* 3: SDA &rarr; Serial data.
-	* 4: SCL &rarr; Serial clock.
-	* 5: INT &rarr; Interput output.
-	* 6: RST &rarr; Reset pin, deze pin is actief hoog.
+	* 3: SDA (P15) &rarr; Serial data.
+	* 4: SCL (P16) &rarr; Serial clock.
+	* 5: INT (W9) &rarr; Interput output.
+	* 6: RST (Y7) &rarr; Reset pin, deze pin is actief hoog.
 -	I²C adres is 0X29 (uitgelezen met een Arduino)
 -	RAM-based Sensor
 
