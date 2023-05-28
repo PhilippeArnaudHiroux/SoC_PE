@@ -1,25 +1,46 @@
- #include <stdio.h>
- #include <string.h>
- #include "platform.h"
- #include "sleep.h"
- #include "xuartps.h"
- #include "xparameters.h"
- #include "xil_printf.h"
- #include "xgpio.h"
+#include <stdio.h>
+#include <string.h>
+#include "platform.h"
+#include "sleep.h"
+#include "xuartps.h"
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xgpio.h"
 #include "xbram.h"
 #include "xgpiops.h"
+#include "xspi.h"
 
 u8 recvCmd;
 u8 sendMsg[4];
 
 XUartPs Uart;
 XGpio Gpio;
+XSpi SpiInstance;
 
 #define BRAM_BASE_ADDR XPAR_AXI_BRAM_CTRL_0_S_AXI_BASEADDR
+#define BUFFER_SIZE 4
 
 int main()
 {
     init_platform();
+
+    u8 TxBuffer[BUFFER_SIZE] = {0xAA, 0xBB, 0xCC, 0xDD};
+	u8 RxBuffer[BUFFER_SIZE] = {0};
+	// Initialize SPI driver
+	XSpi_Config *SpiConfig;
+	SpiConfig = XSpi_LookupConfig(XPAR_PS7_QSPI_0_DEVICE_ID);
+	printf("SpiConfig -> %p", &SpiConfig);
+	XSpi_CfgInitialize(&SpiInstance, SpiConfig, SpiConfig->BaseAddress);
+	XSpi_Start(&SpiInstance);
+	XSpi_Transfer(&SpiInstance, TxBuffer, RxBuffer, BUFFER_SIZE);
+	// Print received data
+	printf("Received data SPI: ");
+	for (int i = 0; i < BUFFER_SIZE; i++) {
+		printf("0x%02X ", RxBuffer[i]);
+	}
+	printf("\n");
+	// Stop the SPI driver
+	XSpi_Stop(&SpiInstance);
 
 	XUartPs_Config *uartConfig = XUartPs_LookupConfig(XPAR_PS7_UART_0_DEVICE_ID);
 	XUartPs_CfgInitialize(&Uart, uartConfig, uartConfig->BaseAddress);
@@ -40,8 +61,7 @@ int main()
 	usleep(5000);
 	XUartPs_Recv(&Uart, &recvCmd, sizeof(u8));
 
-
-	printf("%u", recvCmd);
+	printf("Received data UART: %u\n", recvCmd);
 
 	for(int i=0; i<64; i++)
 	{
