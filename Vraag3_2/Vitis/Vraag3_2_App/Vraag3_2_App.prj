@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Vraag3_2_App" location="C:/Vivado/SoC_2023/PE/Vraag3_2/Vitis/Vraag3_2_App" platform="C:/Vivado/SoC_2023/PE/Vraag3_2/Vitis/Vraag3_2/export/Vraag3_2/Vraag3_2.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="Vraag3_2_App_system" sysConfig="Vraag3_2" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="2f439dfe2a26858ff608e1177844b362">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1114498127">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.864604044" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
